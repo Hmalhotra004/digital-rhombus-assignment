@@ -1,5 +1,12 @@
+import Navbar from "@/components/Navbar";
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <section className="h-full">
+      
+
+    </section>
+  );
 };
 
 export default Home;
