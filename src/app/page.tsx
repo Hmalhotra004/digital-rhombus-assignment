@@ -1,3 +1,5 @@
+import FileUpload from "@/components/FileUpload";
+import Logo from "@/components/Logo";
 import Image from "next/image";
 
 const Home = () => {
@@ -28,6 +30,28 @@ const Home = () => {
             width={300}
           />
         </article>
+      </div>
+
+      <div className="flex flex-col justify-center items-center p-12 pb-16">
+        <div className="m-4 mt-6">
+          <Logo />
+        </div>
+
+        <main className="flex flex-col justify-center items-center gap-y-4 w-[80%]">
+          <h1 className="text-white text-4xl font-semibold mt-4 text-center">
+            Struggling to Manage Your Folders? Drag, Drop, and Watch Them
+            Transform!
+          </h1>
+
+          <h3 className="text-white text-lg text-center">
+            &quot;Say goodbye to clutter and confusion. Our smart system
+            organizes your files into neat, accessible folders in seconds.&quot;
+          </h3>
+
+          <div className="p-1 bg-white rounded-md">
+            <FileUpload />
+          </div>
+        </main>
       </div>
     </section>
   );
