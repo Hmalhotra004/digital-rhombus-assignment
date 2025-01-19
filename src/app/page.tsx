@@ -5,19 +5,19 @@ import Image from "next/image";
 const Home = () => {
   return (
     <section className="bg-clairvoyant min-h-screen">
-      <div className="p-12 grid grid-cols-2 border-b-2 border-white">
+      <div className="p-12 md:grid md:grid-cols-2 border-b-2 border-white flex flex-col-reverse">
         <main className="flex flex-col gap-y-4 justify-center items-center p-10">
-          <h1 className="text-white text-4xl font-semibold xl:text-5xl">
+          <h1 className="text-white text-4xl font-semibold xl:text-5xl max-sm:text-center">
             Streamline Your Financial Tasks Effortlessly
           </h1>
 
-          <h3 className="text-white text-xl xl:text-3xl">
+          <h3 className="text-white text-xl xl:text-3xl max-sm:text-center">
             Managing documents shouldn&apos;t be a hassle. Streamline your
             workflow and declutter your folders with our easy and efficient
             system.
           </h3>
 
-          <div className="flex justify-start w-full">
+          <div className="flex md:justify-start justify-center w-full">
             <button className="p-2 bg-white rounded-md text-clairvoyant text-base items-start">
               Get Started
             </button>
